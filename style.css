@@ -53,25 +53,34 @@ form input, form textarea {
     border-radius: 5px;
 }
 
-.cart-container {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
-    padding: 1rem;
-    border-bottom: 1px solid #ccc;
-
+.cart {
+    padding: 1em;
 }
+
 .cart-item {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-    padding: 0.5rem 0;
     border-bottom: 1px solid #ddd;
+    padding: 1em 0;
+}
+.cart-container {
+    padding: 1rem;
 }
 
-.cart-item span {
-    flex: 1;
+button {
+    background: #dc3545;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #c82333;
+}
+
+.total {
+    font-weight: bold;
+    padding-top: 1em;
 }
 
 .remove-btn {
@@ -87,9 +96,8 @@ form input, form textarea {
     background: #cc0000;
 }
 
-@media (max-width: 768px) {
-    .featured {
-        flex-direction: column;
-        align-items: center;
+@media (max-width: 600px) {
+    .product, .cart-item {
+        width: 90%;
     }
 }
