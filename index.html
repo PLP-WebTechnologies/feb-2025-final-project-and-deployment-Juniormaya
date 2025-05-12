@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-Commerce Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Shop</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart</a>
+            <a href="login.html">Login</a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Welcome to My Shop</h2>
+            <p>Your one-stop shop for all your needs.</p>
+            <a href="products.html" class="btn">Shop Now</a>
+        <section id="products">
+            <h2>Featured Products</h2>
+            <div class="product">
+                <h3>Serum</h3>
+                <p>Serum is a skincare product that delivers high concentrations of active ingredients to the skin.</p>
+                <p>They can target specific skin concerns such as wrinkles, dark spots, and uneven texture.</p>
+                <p>Serums are often formulated with potent ingredients like hyaluronic acid, vitamin C, and peptides.</p>
+                <p>To use a serum, apply a small amount to clean skin before your moisturizer.</p>
+                <img src="https://images.pexels.com/photos/4041391/pexels-photo-4041391.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Serum">
+                <p>Price: $10</p>
+                <button onclick="addToCart('Product 1' , 10)" >Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Moisturizer</h3>
+                <p>Moisturizer is a skincare product that hydrates and softens the skin.</p>
+                <p>They are suitable for all skin types and can be used daily.</p>
+                <img src="https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Moisturizer">
+                <p>Price: $20</p>
+                <button onclick="addToCart('Product 2' , 20)" >Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Cleanser</h3>
+                <p>Cleanser is a skincare product that removes dirt, oil, and makeup from the skin.</p>
+                <p>They are essential for maintaining clear and healthy skin.</p>
+                <img src="https://images.pexels.com/photos/14836430/pexels-photo-14836430.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Cleanser">
+                <p>Price: $15</p>
+                <button onclick="addToCart('Product 3' , 15)" >Add to Cart</button>
+            </div>
+        </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Shop. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

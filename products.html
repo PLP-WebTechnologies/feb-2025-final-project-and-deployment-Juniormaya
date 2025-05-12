@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Shop</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome to Our Products Page</h1>
+        <div class="filter-options">
+            <label for="category">Filter by Category:</label>
+            <select id="category" name="category">
+                <option value="all">All</option>
+                <option value="skincare">Skincare</option>
+                <option value="makeup">Makeup</option>
+                <option value="haircare">Haircare</option>
+            </select>
+            <select id="sort" name="sort">
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="popularity">Popularity</option>
+            </select>
+        </div>
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="product">
+                <h3>Serum</h3>
+                <p>Serum is a skincare product that delivers high concentrations of active ingredients to the skin.</p>
+                <p>They can target specific skin concerns such as wrinkles, dark spots, and uneven texture.</p>
+                <p>Serums are often formulated with potent ingredients like hyaluronic acid, vitamin C, and peptides.</p>
+                <p>To use a serum, apply a small amount to clean skin before your moisturizer.</p>
+                <img src="https://images.pexels.com/photos/4041391/pexels-photo-4041391.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Serum">
+                <p>Price: $10</p>
+                <button onclick="addToCart('Serum', 10)">Add to Cart</button>
+                <div id="quantity">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+                <button onclick="viewCart('Serum', 10)">View Cart</button>
+                <button onclick="removeFromCart('Serum', 10)">Remove from Cart</button>
+            </div>
+            <div class="product">
+                <h3>Moisturizer</h3>
+                <p>Moisturizer is a skincare product that hydrates and softens the skin.</p>
+                <p>They are suitable for all skin types and can be used daily.</p>
+                <img src="https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Moisturizer">
+                <p>Price: $20</p>
+                <button onclick="addToCart('Moisturizer', 20)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Cleanser</h3>
+                <p>Cleanser is a skincare product that removes dirt, oil, and makeup from the skin.</p>
+                <p>They are essential for maintaining clear and healthy skin.</p>
+                <img src="https://images.pexels.com/photos/14836430/pexels-photo-14836430.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Cleanser">
+                <p>Price: $15</p>
+                <button onclick="addToCart('Cleanser', 15)">Add to Cart</button>
+            </div>
+        </section>
+        <section id="cart">
+            <button id="checkout-button">Checkout</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Shop. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
